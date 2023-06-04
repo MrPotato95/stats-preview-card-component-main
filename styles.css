@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+  /* colors */
+  --clr-main-bkg: hsl(233, 47%, 7%);
+  --clr-card-bkg: hsl(244, 38%, 16%);
+  --clr-accent: rgb(170, 92, 219);
+  --clr-main-heading: hsl(0, 0%, 100%);
+  --clr-main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --clr-stat-paragraph: hsla(0, 0%, 100%, 0.6);
+  /* font */
+  --fs-regular: 0.9rem;
+  --ff-inter: 'Inter', sans-serif;
+  --ff-lexend-deca: 'Lexenda Deca', sans-serif;
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-inter);
+}
+
+body {
+  background: var(--clr-main-bkg);
+  font-size: 15px;
+}
+
+.card {
+  width: 90%;
+  background: var(--clr-card-bkg);
+  text-align: center;
+  margin: 88px auto;
+  overflow: hidden;
+  border-radius: 8px 8px 8px 8px;
+}
+
+
+.img-ctn {
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  aspect-ratio: 1.5;
+  background-size: contain;
+  background-image: url(./images/image-header-mobile.jpg);
+  background-color: hsla(277, 65%, 61%, 0.75);
+  background-blend-mode: multiply;
+
+}
+
+.main-section {
+  padding: 20px 35px;
+  color: var(--clr-main-heading);
+}
+
+.desc span {
+  color: var(--clr-accent);
+}
+
+.desc h1 {
+  font-family: var(--ff-inter);
+  font-weight: var(--fw-bold);
+  font-size: 32px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.desc p {
+  font-family: var(--ff-inter);
+  font-weight: var(--fw-regular);
+  color: var(--clr-stat-paragraph);
+  line-height: 1.9;
+  letter-spacing: 1px;
+  padding-bottom: 15px;
+}
+
+.stats-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.stats-section {
+  padding-bottom: 32px;
+}
+
+
+.stat-ctn {
+  margin: 15px 0;
+}
+
+.stat-ctn h2 {
+  font-family: var(--ff-lexend-deca);
+  font-size: 1.5rem;
+  font-weight: var(--fw-bold);
+  color: var(--clr-main-heading);
+}
+
+.stat-ctn p {
+  text-transform: uppercase;
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: var(--clr-stat-paragraph);
+  font-weight: var(--fw-);
+  font-family: var(--ff-inter);
+
+}
+
+@media (min-width: 1440px) {
+
+  h1,
+  p {
+    padding: 0;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 60%;
+  }
+
+  .img-ctn {
+    border-radius: 0px 8px 8px 0px;
+    background-image: url(./images/image-header-desktop.jpg);
+    background-size: 100% 100%;
+    width: 50%;
+    aspect-ratio: 1.2/1;
+    background-blend-mode: multiply;
+  }
+
+  .main-section {
+    text-align: left;
+    width: 50%;
+    padding-left: 74px;
+  }
+
+  .desc {
+    margin-bottom: 40px;
+  }
+
+  .desc h1 {
+    margin-top: 20px;
+    font-size: 2.5rem;
+  }
+
+  .desc p {
+    padding-top: 15px;
+    margin-right: 45px;
+  }
+
+
+  .stats-section {
+    display: inline-flex;
+    text-align: left;
+    flex-direction: row;
+    gap: 65px;
+  }
+
+  .stat-ctn p {
+    letter-spacing: 0.11rem;
+  }
+
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: var(--clr-main-heading);
+}
+
+.attribution a {
+  color: var(--clr-accent);
+}
