@@ -29,7 +29,7 @@ body {
   font-size: 15px;
 }
 
-.card {
+.card-ctn {
   width: 90%;
   background: var(--clr-card-bkg);
   text-align: center;
@@ -117,7 +117,7 @@ body {
     padding: 0;
   }
 
-  .card {
+  .card-ctn {
     display: flex;
     flex-direction: row-reverse;
     width: 60%;
@@ -169,7 +169,7 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
-  position: sticky;
+  position: relative;
   bottom: 0;
   left: 0;
   right: 0;
